@@ -9,32 +9,6 @@
     "build": "vite build",
     "dev": "vite playground"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ismail9k/vue3-carousel.git"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/carousel.d.ts",
-      "import": "./dist/carousel.mjs",
-      "require": "./dist/carousel.cjs",
-      "default": "./dist/carousel.mjs"
-    },
-    "./dist/carousel": {
-      "types": "./dist/carousel.d.ts",
-      "import": "./dist/carousel.mjs",
-      "require": "./dist/carousel.cjs",
-      "default": "./dist/carousel.mjs"
-    },
-    "./dist/*": "./dist/*",
-    "./carousel.css": "./dist/carousel.css"
-  },
-  "main": "dist/carousel.cjs",
-  "module": "dist/carousel.mjs",
-  "style": "dist/carousel.css",
-  "types": "dist/carousel.d.ts",
-  "unpkg": "dist/carousel.min.js",
-  "jsdelivr": "dist/carousel.min.js",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@rollup/plugin-terser": "^0.4.4",
@@ -50,7 +24,6 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.32.0",
     "globals": "^15.14.0",
-    "husky": "^9.1.7",
     "jsdom": "^25.0.1",
     "livecodes": "0.8.0",
     "prettier": "^3.4.2",
@@ -69,20 +42,6 @@
   "peerDependencies": {
     "vue": "^3.5.0"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "not dead",
-    "not IE 11"
-  ],
-  "keywords": [
-    "vue",
-    "vue3",
-    "carousel",
-    "slider",
-    "vue3-carousel",
-    "vue3-slider"
-  ],
   "dependencies": {
     "@vue/compiler-dom": "^3.5.13"
   }
