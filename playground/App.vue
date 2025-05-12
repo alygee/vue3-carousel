@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import '@/theme.css'
+import '../src/theme.css'
 import {
   Carousel as VueCarousel,
   Slide as CarouselSlide,
   Pagination as CarouselPagination,
   Navigation as CarouselNavigation,
-} from '@/index'
+} from '../src/index'
 import { computed, onMounted, reactive, ref } from 'vue'
 
 import {
@@ -13,7 +13,7 @@ import {
   SNAP_ALIGN_OPTIONS,
   BREAKPOINT_MODE_OPTIONS,
   SLIDE_EFFECTS,
-} from '@/shared/constants'
+} from '../src/shared/constants'
 
 const carouselWrapper = ref<HTMLDivElement | null>(null)
 const carousel = ref<VueCarousel | null>(null)

@@ -6,23 +6,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "vite playground",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "prepublishOnly": "$npm_execpath run build",
-    "release": "sh scripts/new-release.sh",
-    "lint": "eslint .",
-    "lint:fix": "$npm_execpath run lint -- --fix",
-    "prettier": "prettier . --check",
-    "prettier:fix": "$npm_execpath run prettier --write",
-    "typecheck": "tsc -p .",
-    "typecheck:watch": "tsc -p . --watch --preserveWatchOutput",
-    "test": "vitest run --coverage",
-    "test:update": "vitest run --u",
-    "test:watch": "vitest watch",
-    "prepare": "husky"
+    "build": "vite build",
+    "dev": "vite playground"
   },
   "repository": {
     "type": "git",
@@ -97,5 +82,8 @@
     "slider",
     "vue3-carousel",
     "vue3-slider"
-  ]
+  ],
+  "dependencies": {
+    "@vue/compiler-dom": "^3.5.13"
+  }
 }
